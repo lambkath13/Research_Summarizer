@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Research Paper Summarizer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+
+<h1>AI Research Paper Summarizer</h1>
+
+<form method="POST" enctype="multipart/form-data">
+    <input type="file" name="pdf" required>
+    <button type="submit">Analyze</button>
+</form>
+
+{% if short_summary %}
+
+<h2>Short Summary</h2>
+<p>{{ short_summary }}</p>
+
+<h2>Key Points</h2>
+<ul>
+    {% for point in key_points %}
+        <li>{{ point }}</li>
+    {% endfor %}
+</ul>
+
+<h2>Keywords</h2>
+<ul>
+    {% for word in keywords %}
+        <li>{{ word }}</li>
+    {% endfor %}
+</ul>
+
+{% endif %}
+
+</div>
+
+</body>
+</html>

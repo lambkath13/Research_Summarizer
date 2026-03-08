@@ -1,0 +1,54 @@
+# Python cache
+
+**pycache**/
+*.py[cod]
+*$py.class
+
+# Virtual environments
+
+venv/
+env/
+ENV/
+.venv/
+
+# Python environment files
+
+.env
+
+# Flask
+
+instance/
+.webassets-cache
+
+# Uploaded files
+
+uploads/
+
+# Logs
+
+*.log
+
+# OS files
+
+.DS_Store
+Thumbs.db
+
+# IDE
+
+.vscode/
+.idea/
+
+# Jupyter
+
+.ipynb_checkpoints/
+
+# Build files
+
+build/
+dist/
+*.egg-info/
+
+# Temporary files
+
+*.tmp
+*.temp
